@@ -47,7 +47,6 @@
                 </td></table>       
 			<?php //end navigation bar ?>
  	
- 			<?php //<!-- center--> ?>
  			<?php //<!-- main-body--> ?>	
  				<div id="main-body">
    					<div id="content">
@@ -62,7 +61,7 @@
   				<div id="footer">
    					<div align="center" id="textGrey">
    						<span class="textLightGrey"><?php echo INFO;?></span>
-   						<P class="textLightGrey"><?php echo ERRORS;?></P>
+   						<p class="textLightGrey"><?php echo ERRORS;?></p>
    					</div>	
   				</div>
  	
