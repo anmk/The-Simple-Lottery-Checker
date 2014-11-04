@@ -1,0 +1,207 @@
+/*
+ * $Id: style.css, v 1.0
+ * The Simple Lottery Checker
+ * Copyright (c) 2014 Andrzej Kałowski
+ * http://lotek.kalowski.com
+ */
+
+#wrap	{
+		max-width: 2076px;
+        }
+/*Structure*/
+#header {
+		font-family: Verdana, sans-serif;
+		font-size: 100%;
+		color: #e70;
+		margin-bottom: 0px;
+		}
+#main-body {
+		float: left;
+		width: 74%;
+		}
+#content {
+		float: right;
+		width: 65%;
+		color: #696969;
+		font-family: Verdana, sans-serif;
+		font-size: 95%;
+		text-align: justify;
+		background: url(/public/img/filtr_b70.png) no-repeat top left;
+		}
+
+#footer {
+		clear: both;
+		padding-top: 20px;
+		margin-top: 10px;
+		color: #696969;
+		font-family: Verdana, sans-serif;
+		font-size: 70%;
+		text-align: justify;
+		}
+/**/   
+#box {
+		font-family: Verdana, sans-serif;
+		font-weight: bold;
+		width: 99%;
+		padding: 0px 0px;
+		margin: 0px 0px;
+		border: 2px solid #808000;
+		background: url(public/img/filtr_b70.png) no-repeat top left;
+		}
+/**/  
+.pg2 {
+		width: 100%;
+		color: #e70;
+		font-size: 130%;
+		}
+.num {
+		border: 1px solid #808000;
+		padding: 2px 2px 2px 2px;
+		margin: 2px 2px 2px 2px;
+		}
+		
+.logField {
+		border: 1px solid #808000;
+		float: left;
+		padding: 1px 1px;
+		margin: 10px 10px;
+		}
+.button {
+		margin-left: 70px;
+}
+
+/*Colours*/  
+.greenColour{
+		font-family: Verdana, sans-serif;
+		color: green;
+		}
+.blueColour{
+		font-family: Verdana, sans-serif;
+		color: blue;	
+		}
+.redColour{
+		font-family: Verdana, sans-serif;
+		color: red;
+		font-weight: bold;
+		}
+.redColourM{
+		font-family: Verdana, sans-serif;
+		color: red;
+		font-weight: bold;
+		margin-left: 70px;	
+		}
+/*Text*/
+.textGreen {
+		padding: 5px 5px 5px 5px;
+		color: #808000;
+		font-family: Verdana, sans-serif;
+		font-size: 105%;
+		font-weight: bold;
+		margin-left: 0px;
+		}
+.textBrown {
+		padding: 5px 5px 5px 5px;
+		color: #884513;
+		font-family: Verdana, sans-serif;
+		font-size: 105%;
+		text-align: center;
+		font-weight: bold;
+		margin-left: 0px;
+		}
+.textYellow {
+		padding: 5px 5px 5px 5px;
+		color: #f0e68c;
+		font-family: Verdana, sans-serif;
+		font-size: 105%;
+		font-weight: bold;
+		}
+.textRed {
+		padding: 5px 10px 5px 5px;
+		color: #ff0000;
+		font-family: Verdana, sans-serif;
+		font-size: 110%;
+		text-align: center;
+		font-weight: bold;
+		}
+.textGrey {
+		padding: 10px 10px 0px 0px;
+		color: #808080;
+		font-family: Verdana, sans-serif;
+		font-size: 95%;
+		width: 5em;
+		margin-left: 70px;
+		}
+.textGreyLog {
+		padding: 10px 10px 10px 10px;
+		color: #808080;
+		font-family: Verdana, sans-serif;
+		font-size: 95%;
+		text-align: left;
+		font-weight: bold;
+		width: 5em;
+		}
+.textBrownLog {
+		color: #884513;
+		font-family: Verdana, sans-serif;
+		font-size: 105%;
+		font-weight: bold;		
+		}
+.logSubmit {
+		margin: 30px 10px 10px 10px;
+		vertical-align: bottom;
+		}
+.textLog {
+		padding: 10px 10px 0px 0px;
+		color: #808080;
+		font-family: Verdana, sans-serif;
+		font-size: 80%;
+		text-align: left;
+		padding: 1px 1px;
+		margin: 10px 10px;
+		}
+.main {
+table-layout: fixed; height: 300px;
+		}
+.inmain {
+		margin: 60px 30px 30px 60px;
+		vertical-align: bottom;
+		}	
+/*Menu*/
+#menu {
+		padding: 10px 10px 10px 10px;
+		list-style: none;
+}
+#menu li {
+		float: left;
+		font-family: Verdana, sans-serif;
+		}   
+#menu a {
+		padding: 4px 8px;
+		color: #696969;
+		text-decoration: none;
+		border: 1px solid #9B8748;
+		background: #fffff0; 
+		} 
+#menu a:hover {
+		background: #bdb76b;
+		color: #fffff0;
+		}
+#menu a:hover, body#number_i #number-i a {
+		background: #bdb76b;
+		}
+#menu a:hover, body#login_i #login-i a {
+		background: #bdb76b;
+		}
+#menu a:hover, body#privacy_i #privacy-i a {
+		background: #bdb76b;
+		}
+#menu a:hover, body#register_i #register-i a {
+		background: #bdb76b;
+		}
+#menu a:hover, body#logout_i #logout-i a {
+		background: #bdb76b;
+		}
+/*Background*/
+div#links a {display: block;}
+		body {background: #fffff0;}
+		
