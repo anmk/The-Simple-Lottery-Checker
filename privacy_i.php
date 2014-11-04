@@ -65,8 +65,7 @@
   				<div id="footer">
    					<div align="center" id="textGrey">
    						<span class="textLightGrey"><?php echo INFO;?></span>
-   						<P class="textLightGrey"><?php echo ERRORS;?></P>
-      				<?php //<!--&copy; Copyright by Andrzej Kałowski--> ?>
+   						<p class="textLightGrey"><?php echo ERRORS;?></p>
    					</div>	
   				</div>
  	
