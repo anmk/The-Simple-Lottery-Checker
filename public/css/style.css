@@ -131,6 +131,11 @@
 		width: 5em;
 		margin-left: 70px;
 		}
+.textLightGrey {
+		color: #a9a9a9;
+		font-family: Verdana, sans-serif;
+		font-size: 95%;
+		}
 .textGreyLog {
 		padding: 10px 10px 10px 10px;
 		color: #808080;
