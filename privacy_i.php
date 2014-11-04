@@ -50,7 +50,6 @@
               </table>       
 			<?php //end navigation bar ?>
 
-			<?php //<!-- center--> ?>
 			<?php //<!-- main-body--> ?>		
   				<div id="main-body">
    					<div id="content">
