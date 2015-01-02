@@ -1,9 +1,9 @@
 <?php
 /*
- * $Id: english.php, v 1.0
+ * $Id: english.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
  
 // Global entries for the html tag
@@ -12,6 +12,7 @@ define('HTML_PARAMS', 'lang="pl"');
 define('CHARSET', 'UTF-8');
  
 define('ENTER_CHOOSED_NUMBER', 'Enter choosed numbers');
+define('SAVED_CHOOSED_NUMBER', 'Introduced recorded numbers');
 
 define('FIRST_CHOOSED_NUMBER', 'first:');
 define('SECOND_CHOOSED_NUMBER', 'second:');
@@ -56,12 +57,13 @@ define('INFO', 'The application can target finding lotteries six-numbers results
 define('ERRORS', 'The author used to force for the application would be worked right. And he won`t be owed when few mistakes will be occur during the work.');
 define('CHECK_OUTCOME', 'The Simple Lottery Checker');
 define('CHECK', 'Check');
+define('FORWARD', 'Forward');
 define('LOGIN', 'Login');
 define('REGISTER', 'Create Account');
 define('MY_ACCOUNT', 'My Account');
 define('USER_NAME', 'User:');
 define('PASSWORD', 'Password:');
-define('CONFIRM_PASSWORD', 'Confirm password:');
+define('CONFIRM_PASSWORD', 'Confirm:');
 define('WELCOME', 'Welcome again ');
 define('CHECK_YOUR_OUTCOME', ', chetnie sprawdze Twoje trafienia ');
 define('IN_YOUR_ACCONT', ' in my account');
@@ -72,3 +74,7 @@ define('LOGOUT_M', 'Logout');
 define('MY_ACCOUNT_M', 'My Account');
 define('LOGIN_M', 'Login');
 define('REGISTER_M', 'Create Account');
+define('SAVE_YOUR_NUMBER', 'Save your numbers');
+define('ENTER_NAME', 'Enter name for your numbers');
+define('CHECK_NUMBER', 'Login to save your choosed numbers');
+define('SAVE_CHOOSED_NUMBER', 'Enter name to save your choosed number');

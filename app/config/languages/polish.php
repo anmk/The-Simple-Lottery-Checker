@@ -1,18 +1,18 @@
 <?php
 /*
- * $Id: polish.php, v 1.0
+ * $Id: polish.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 // Global entries for the html tag
 define('HTML_PARAMS', 'lang="pl"');
 
-// UTF-8
 define('CHARSET', 'UTF-8');
-// 
+
 define('ENTER_CHOOSED_NUMBER', 'Wprowadź wytypowane liczby');
+define('SAVED_CHOOSED_NUMBER', 'Wprowadzono zapisane liczby');
 
 define('FIRST_CHOOSED_NUMBER', 'pierwsza:');
 define('SECOND_CHOOSED_NUMBER', 'druga:');
@@ -57,12 +57,13 @@ define('INFO', 'Aplikacja służy do sprawdzania wyników gier losowych, w któr
 define('ERRORS', 'Autor dołożył wszelkich starań, aby aplikacja działała właściwie, jednak nie ponosi on żadnej odpowiedzialności za ewentualne błędy mogące nastąpić w trakcie jej pracy.');
 define('CHECK_OUTCOME', 'Lotek - Sprawdź swoje trafienia');
 define('CHECK', 'Sprawdź');
+define('FORWARD', 'Dalej');
 define('LOGIN', 'Logowanie');
-define('REGISTER', 'Utwórz konto');
+define('REGISTER', 'Rejestracja');
 define('MY_ACCOUNT', 'Moje konto');
 define('USER_NAME', 'Użytkownik:');
 define('PASSWORD', 'Hasło:');
-define('CONFIRM_PASSWORD', 'Potwierdź hasło:');
+define('CONFIRM_PASSWORD', 'Potwierdź:');
 define('WELCOME', 'Witaj ponownie ');
 define('CHECK_YOUR_OUTCOME', ', chętnie sprawdzę Twoje trafienia ');
 define('IN_YOUR_ACCONT', ' w swoim koncie');
@@ -71,7 +72,13 @@ define('LOGOUT', 'Wylogowano pomyślnie');
 define('CHECK_M', 'Sprawdź');
 define('LOGOUT_M', 'Wyloguj');
 define('MY_ACCOUNT_M', 'Moje konto');
-define('LOGIN_M', 'Zaloguj');
-define('REGISTER_M', 'Zarejestruj');
+define('LOGIN_M', 'Logowanie');
+define('REGISTER_M', 'Rejestracja');
+define('SAVE_YOUR_NUMBER', 'Zapisz swoje liczby');
+define('ENTER_NAME', 'Zaznaczając Checkbox nadaj nazwę swoim liczbom');
+define('CHECK_NUMBER', 'Zaloguj się aby zapisać swoje typowane liczby');
+define('SAVE_CHOOSED_NUMBER', 'Aby zapisać wytypowane liczby nadaj im nazwę');
+define('DONT_SAVE_CHOOSED_NUMBER', 'Nie wierzysz w swoje liczby? - Nie zapisałeś ich.');
+define('NAME_SAVED', 'Twoje liczby zostały zapisane, naciśnij "Dalej"');
 
 
