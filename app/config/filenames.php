@@ -1,11 +1,12 @@
 <?php
 /*
- * $Id: filenames.php, v 1.0$
+ * $Id: filenames.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
+define('FILE_DB', 'db.php');
 define('FILE_NUMBER', 'number.php');
 define('FILE_NUMBER_VIEW', 'number_v.php');
 define('FILE_NUMBER_INIT', 'number_i.php');
