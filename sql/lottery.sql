@@ -1,7 +1,7 @@
- # $Id: lottery.sql, v 1.0
+ # $Id: lottery.sql, v 1.1
  # The Simple Lottery Checker
- # Copyright (c) 2014 Andrzej Kałowski
- # http://lotek.kalowski.com
+ # @author Andrzej Kałowski
+ # @link http://lotek.kalowski.com
  # Database: lottery
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -28,4 +28,3 @@ CREATE TABLE IF NOT EXISTS `numbers_to_users` (
   `user_id` int(11) UNSIGNED NOT NULL,
   PRIMARY KEY (`number_id`, `user_id`)
 ) ENGINE=InnoDB ;
-
