@@ -1,9 +1,9 @@
 <?php
 /*
- * $Id: class.Transfer_m.php, v 1.0
+ * $Id: class.Transfer_m.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 class Transfer_m {
@@ -57,7 +57,7 @@ class Transfer_m {
 	function redirectLink($url){
         header("Location: $url");
     }
-	
+		
 }
 
  

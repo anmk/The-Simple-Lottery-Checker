@@ -1,9 +1,9 @@
 <?php
 /*
- * $Id: class.Dnumber_m.php, v 1.0
+ * $Id: class.Dnumber_m.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 class Dnumber_m {
@@ -24,4 +24,5 @@ class Dnumber_m {
         $this->dNumber5 = $dNumber5;
         $this->dNumber6 = $dNumber6;
     }
+	
 }

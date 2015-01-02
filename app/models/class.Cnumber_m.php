@@ -1,9 +1,9 @@
 <?php
 /*
- * $Id: class.Cnumber_m.php, v 1.0
+ * $Id: class.Cnumber_m.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 class Cnumber_m {
@@ -24,5 +24,5 @@ class Cnumber_m {
         $this->cNumber5 = $cNumber5;
         $this->cNumber6 = $cNumber6;
     }
-	
+		
 }
