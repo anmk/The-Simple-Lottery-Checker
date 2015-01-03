@@ -54,7 +54,7 @@ define('SORT_LUCKY_NUMBERS', 'Your outcomes:');
 define('GUESS', '"&nbsp&nbspoutcomes');
 define('YOU_HAVE', 'You have&nbsp&nbsp"');
 define('INFO', 'The application can target finding lotteries six-numbers results.');
-define('ERRORS', 'The author used to force for the application would be worked right. And he won`t be owed when few mistakes will be occur during the work.');
+define('ERRORS', 'The author tried really hard to make the application very good but he is not responsible for any errors.');
 define('CHECK_OUTCOME', 'The Simple Lottery Checker');
 define('CHECK', 'Check');
 define('FORWARD', 'Forward');
