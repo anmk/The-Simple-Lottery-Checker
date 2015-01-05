@@ -1,9 +1,9 @@
 <?php 
 /*
- * $Id: init.php, v 1.0
+ * $Id: init.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 define('SITE_PATH',"http://lotek.kalowski.com/");
@@ -22,7 +22,7 @@ define('DIR_LANGUAGES', DIR_CONF . 'languages/');
 include(DIR_CONF.'filenames.php');
 include(DIR_MOD.'main.php');
 
-$Transfer->setColourAlertTypes(array('greenColour', 'redColour', 'blueColour', 'redColourM'));
+$Transfer->setColourAlertTypes(array('greenColour', 'redColour', 'blueColour', 'orangeColour'));
 session_start();
 
 //languages

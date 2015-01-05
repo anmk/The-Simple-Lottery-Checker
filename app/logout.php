@@ -1,9 +1,9 @@
 <?php
 /*
- * $Id: logout.php, v 1.0
+ * $Id: logout.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 $Authorization->logoff();

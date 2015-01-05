@@ -1,13 +1,13 @@
 <?php
 /*
- * $Id: login.php, v 1.0
+ * $Id: login.php, v 1.1
  * The Simple Lottery Checker
- * Copyright (c) 2014 Andrzej Kałowski
- * http://lotek.kalowski.com
+ * @author Andrzej Kałowski
+ * @link http://lotek.kalowski.com
  */
 
 include_once('init.php');
-include(DIR_CONF.'db.php');
+include(DIR_CONF.FILE_DB);
 
 if(isset($_POST['logSubmit'])){
     
