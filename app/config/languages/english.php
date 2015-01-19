@@ -11,15 +11,15 @@ define('HTML_PARAMS', 'lang="pl"');
 
 define('CHARSET', 'UTF-8');
  
-define('ENTER_CHOOSED_NUMBER', 'Enter choosed numbers');
-define('SAVED_CHOOSED_NUMBER', 'Introduced recorded numbers');
+define('ENTER_CHOSEN_NUMBER', 'Enter c numbers');
+define('SAVED_CHOSEN_NUMBER', 'Introduced recorded numbers');
 
-define('FIRST_CHOOSED_NUMBER', 'first:');
-define('SECOND_CHOOSED_NUMBER', 'second:');
-define('THIRD_CHOOSED_NUMBER', 'third:');
-define('FOURTH_CHOOSED_NUMBER', 'fourth:');
-define('FIFTH_CHOOSED_NUMBER', 'fifth:');
-define('SIXTH_CHOOSED_NUMBER', 'sixth:');
+define('FIRST_CHOSEN_NUMBER', 'first:');
+define('SECOND_CHOSEN_NUMBER', 'second:');
+define('THIRD_CHOSEN_NUMBER', 'third:');
+define('FOURTH_CHOSEN_NUMBER', 'fourth:');
+define('FIFTH_CHOSEN_NUMBER', 'fifth:');
+define('SIXTH_CHOSEN_NUMBER', 'sixth:');
 
 define('ENTER_DRAWN_NUMBER', 'Enter drawn numbers');
 define('FIRST_DRAWN_NUMBER', 'first:');
@@ -29,17 +29,17 @@ define('FOURTH_DRAWN_NUMBER', 'fourth:');
 define('FIFTH_DRAWN_NUMBER', 'fifth:');
 define('SIXTH_DRAWN_NUMBER', 'sixth:');
 
-define('CHOOSED_NUMBER', '-choosed number: ');
+define('CHOSEN_NUMBER', '-chosen number: ');
 define('DRAWN_NUMBER', '-drawn number: ');
 
 define('ENTER_ALL_NUMBER', 'Enter all fields please');
 
-define('CORRECT_FIRST_CHOOSED_NUMBER', 'Correct first choosed number please');
-define('CORRECT_SECOND_CHOOSED_NUMBER', 'Correct second choosed number please');
-define('CORRECT_THIRD_CHOOSED_NUMBER', 'Correct third choosed number pleaseę');
-define('CORRECT_FOURTH_CHOOSED_NUMBER', 'Correct fourth choosed number please');
-define('CORRECT_FIFTH_CHOOSED_NUMBER', 'Correct fifth choosed number please');
-define('CORRECT_SIXTH_CHOOSED_NUMBER', 'Correct sixth choosed number please');
+define('CORRECT_FIRST_CHOSEN_NUMBER', 'Correct first chosen number please');
+define('CORRECT_SECOND_CHOSEN_NUMBER', 'Correct second chosen number please');
+define('CORRECT_THIRD_CHOSEN_NUMBER', 'Correct third chosen number pleaseę');
+define('CORRECT_FOURTH_CHOSEN_NUMBER', 'Correct fourth chosen number please');
+define('CORRECT_FIFTH_CHOSEN_NUMBER', 'Correct fifth chosen number please');
+define('CORRECT_SIXTH_CHOSEN_NUMBER', 'Correct sixth chosen number please');
 
 define('CORRECT_FIRST_DRAWN_NUMBER', 'Correct first drawn number please');
 define('CORRECT_SECOND_DRAWN_NUMBER', 'Correct second drawn number please');
@@ -76,5 +76,5 @@ define('LOGIN_M', 'Login');
 define('REGISTER_M', 'Create Account');
 define('SAVE_YOUR_NUMBER', 'Save your numbers');
 define('ENTER_NAME', 'Enter name for your numbers');
-define('CHECK_NUMBER', 'Login to save your choosed numbers');
-define('SAVE_CHOOSED_NUMBER', 'Enter name to save your choosed number');
+define('CHECK_NUMBER', 'Login to save your chosen numbers');
+define('SAVE_CHOSEN_NUMBER', 'Enter name to save your chosen number');
