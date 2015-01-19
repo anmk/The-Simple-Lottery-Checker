@@ -7,19 +7,21 @@
  */
 ?>
 
+<!DOCTYPE html>
 <title>Privacy</title>
-<meta charset="utf-8">
-<link rel = "stylesheet" type = "text/css" href = "/public/css/style.css" />
-<link rel = "stylesheet" type = "text/css" href = "/app/init.php" />		
+<meta charset="utf-8" />
+<link rel = "stylesheet" href = "/public/css/style.css" />
+<link rel = "stylesheet" href = "/app/init.php" />		
 	
 <div class="main">
-	<p align="center"><?php echo '<span class="textBrown">' . MY_ACCOUNT . " - " . $_SESSION['username'] . '</span>'; ?></p>
-			
-		<div class="main" align="center">
-				
-			<form action="../number_i.php" name="loadNumbers" id="loadNumbers" method="post">
-            	
-				<div><table>	
+	<header>
+		<p class ="textBrown"><?php echo MY_ACCOUNT . " - " . $_SESSION['username']; ?></p>
+	</header>
+	
+		<section class="main">			
+			<form action="../number_i.php" name="loadNumbers" id="loadNumbers" method="post">	
+				<article>
+					<table>	
 						<?php
 						$AccountSpace = new AccountSpace_m();
 						$Transfer = new Transfer_m();
@@ -43,8 +45,8 @@
 						}						
 						?>
 					<input type="image" src="/public/img/enterNumberPl.png" class="buttonPrivacy" />	       	
-				</table></div>
-            	          	
+					</table>
+				</article> 	          	
 			</form>
         		
 				<div>
@@ -56,7 +58,7 @@
 					?>
 				</div>
   				           	
-		</div>
+		</section>
             
 </div>
     

@@ -7,17 +7,20 @@
  */
 ?>
 
+<!DOCTYPE html>
 <title>Enter the number</title>  
-<meta charset="<?php echo CHARSET; ?>">
-<link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/public/css/style.css" />
     
 <div class="main">
-	<p align="center"><?php echo '<span class="textBrown">' . LOGIN . '</span>'; ?></p>
-
-		<form action="" method="post" id="login">
-           
-            <div class="main" align="center">
-            	
+	<header>
+		<p class ="textBrown"><?php echo LOGIN; ?></p>
+	</header>
+	
+	<section class="main">
+		
+		<form action="" method="post" id="login"> 
+        	<article>
 				<table class="inmain" border="0" width="100%" cellspacing="0" cellpadding="2">
 					<tr>
 						<td width="40%"><label for="username" class="leftMain"><span class=""><?php echo '<span class="textGreyLog">' . LOGIN . '</span>'; ?></span></label></td>
@@ -33,19 +36,18 @@
 						<input type="image" class="logSubmit" src="/public/img/loginPl.png">	  
 					</td>
 				</table>
-            	
-            	<div>
-	            	<?php
-	       				$ColourAlert = $this->getColourAlert();
-	       				if($ColourAlert != '') {
-	       				echo '<span class="ColourAlert">' . $ColourAlert . '</span>';
-						}
-	  				?>
-            	</div>
-            	
-            </div>
-            
+        	</article>     	   
         </form>	  
  
+ 		<div>
+        	<?php
+   				$ColourAlert = $this->getColourAlert();
+   				if($ColourAlert != '') {
+   				echo '<span class="ColourAlert">' . $ColourAlert . '</span>';
+				}
+			?>
+		</div>
+ 
+ 	</section>
 </div>
     
