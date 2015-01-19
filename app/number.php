@@ -32,12 +32,12 @@ if (!isset($_SESSION['visibility'])) $_SESSION['visibility'] = '';
 
 if(isset($_POST['numSubmit'])){
 
-$Transfer->setInfo('cNumber1', $_POST['choosedNumber1']);
-$Transfer->setInfo('cNumber2', $_POST['choosedNumber2']);
-$Transfer->setInfo('cNumber3', $_POST['choosedNumber3']);
-$Transfer->setInfo('cNumber4', $_POST['choosedNumber4']);
-$Transfer->setInfo('cNumber5', $_POST['choosedNumber5']);
-$Transfer->setInfo('cNumber6', $_POST['choosedNumber6']);
+$Transfer->setInfo('cNumber1', $_POST['chosenNumber1']);
+$Transfer->setInfo('cNumber2', $_POST['chosenNumber2']);
+$Transfer->setInfo('cNumber3', $_POST['chosenNumber3']);
+$Transfer->setInfo('cNumber4', $_POST['chosenNumber4']);
+$Transfer->setInfo('cNumber5', $_POST['chosenNumber5']);
+$Transfer->setInfo('cNumber6', $_POST['chosenNumber6']);
 
 $Transfer->setInfo('dNumber1', $_POST['drawnNumber1']);
 $Transfer->setInfo('dNumber2', $_POST['drawnNumber2']);
@@ -49,13 +49,13 @@ $Transfer->setInfo('dNumber6', $_POST['drawnNumber6']);
 $Transfer->setInfo('numberId', '');
 
 if($Authorization->logStatus() == TRUE) {
-	$Transfer->setInfo('chNumberName', $_POST['choosedNumberName']);
+	$Transfer->setInfo('chNumberName', $_POST['chosenNumberName']);
 }
 if (!isset($userId)) $userId = '';
 if (!isset($numberId)) $numberId = '';
 if (!isset($devices)) $devices = '';
 
-    if($_POST['choosedNumber1'] == '' || $_POST['choosedNumber2'] == '' || $_POST['choosedNumber3'] == '' || $_POST['choosedNumber4'] == '' || $_POST['choosedNumber5'] == '' || $_POST['choosedNumber6'] == ''){
+    if($_POST['chosenNumber1'] == '' || $_POST['chosenNumber2'] == '' || $_POST['chosenNumber3'] == '' || $_POST['chosenNumber4'] == '' || $_POST['chosenNumber5'] == '' || $_POST['chosenNumber6'] == ''){
 	        $Transfer->setColourAlert(ENTER_ALL_NUMBER,'redColour');
 	        $Transfer->loadLink("views/number_v.php");
 		 
@@ -64,27 +64,27 @@ if (!isset($devices)) $devices = '';
 	        $Transfer->loadLink("views/number_v.php");
 		 
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber1'))){
-	        $Transfer->setColourAlert(CORRECT_FIRST_CHOOSED_NUMBER,'redColour');        
+	        $Transfer->setColourAlert(CORRECT_FIRST_CHOSEN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 		 
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber2'))){
-	        $Transfer->setColourAlert(CORRECT_SECOND_CHOOSED_NUMBER,'redColour');        
+	        $Transfer->setColourAlert(CORRECT_SECOND_CHOSEN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 			
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber3'))){
-	        $Transfer->setColourAlert(CORRECT_THIRD_CHOOSED_NUMBER,'redColour');        
+	        $Transfer->setColourAlert(CORRECT_THIRD_CHOSEN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 			
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber4'))){
-	        $Transfer->setColourAlert(CORRECT_FOURTH_CHOOSED_NUMBER,'redColour');        
+	        $Transfer->setColourAlert(CORRECT_FOURTH_CHOSEN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 			
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber5'))){
-	        $Transfer->setColourAlert(CORRECT_FIFTH_CHOOSED_NUMBER,'redColour');        
+	        $Transfer->setColourAlert(CORRECT_FIFTH_CHOSEN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 			
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber6'))){
-	        $Transfer->setColourAlert(CORRECT_SIXTH_CHOOSED_NUMBER,'redColour');        
+	        $Transfer->setColourAlert(CORRECT_SIXTH_CHOSEN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 		
 		} else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber1'))){
@@ -111,7 +111,7 @@ if (!isset($devices)) $devices = '';
 	        $Transfer->setColourAlert(CORRECT_SIXTH_DRAWN_NUMBER,'redColour');        
 	        $Transfer->loadLink("views/number_v.php");
 
-		} else if (($Authorization->logStatus() == TRUE) && ($_POST['choosedNumberName'] != '')) {
+		} else if (($Authorization->logStatus() == TRUE) && ($_POST['chosenNumberName'] != '')) {
 			$AccountSpace->remember($Transfer->getInfo('numberId'), $Transfer->getInfo('chNumberName'), $Transfer->getInfo('cNumber1'), $Transfer->getInfo('cNumber2'), $Transfer->getInfo('cNumber3'), $Transfer->getInfo('cNumber4'), $Transfer->getInfo('cNumber5'), $Transfer->getInfo('cNumber6'));
 			$Transfer->setColourAlert(NAME_SAVED,'greenColour');
 			$Transfer->setInfo('chNumberName', '');
@@ -126,7 +126,7 @@ if (!isset($devices)) $devices = '';
 		echo '<div class="main_n">'; 
 		echo '<table align="center"><td align="left"><br>';	
 			foreach ($cNumbers as $cNumber => $cValue) {
-    			echo $cNumber+1 . CHOOSED_NUMBER . '<span class="textBrown">' . $cValue . '</span>' . '<br/>';	
+    			echo $cNumber+1 . CHOSEN_NUMBER . '<span class="textBrown">' . $cValue . '</span>' . '<br/>';	
 			}
 			echo '</td><td>&nbsp</td>';
 			
