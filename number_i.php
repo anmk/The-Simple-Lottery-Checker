@@ -18,10 +18,10 @@
 		<meta name="description" content="The Simple Lottery Checker" />
 		<meta name="author" content="Andrzej Kałowski" />
 		<!-- CSS files -->
-		<link rel="stylesheet" href="public/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="public/css/animate.css" />
-		<link rel="stylesheet" href="public/css/style.css" />
-		<link rel="stylesheet" href="public/css/responsive.css" />
+		<link rel="stylesheet" href="public/css/bootstrap.min.css" media="screen" />
+		<link rel="stylesheet" href="public/css/animate.css" media="screen" />
+		<link rel="stylesheet" href="public/css/style.css" media="screen" />
+		<link rel="stylesheet" href="public/css/responsive.css" media="screen" />
 		<!-- Andika font -->
 		<link href="http://fonts.googleapis.com/css?family=Andika&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	</head>
