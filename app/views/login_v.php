@@ -7,47 +7,56 @@
  */
 ?>
 
-<!DOCTYPE html>
-<title>Enter the number</title>  
-<meta charset="utf-8" />
-<link rel="stylesheet" href="/public/css/style.css" />
-    
-<div class="main">
-	<header>
-		<p class ="textBrown"><?php echo LOGIN; ?></p>
-	</header>
-	
-	<section class="main">
-		
-		<form action="" method="post" id="login"> 
-        	<article>
-				<table class="inmain" border="0" width="100%" cellspacing="0" cellpadding="2">
-					<tr>
-						<td width="40%"><label for="username" class="leftMain"><span class=""><?php echo '<span class="textGreyLog">' . LOGIN . '</span>'; ?></span></label></td>
-						<td width="60%"><input type="text"  name="username" id="username" class="num" value="<?php echo $this->getInfo('user'); ?>" /></td>
-					</tr>
-					<tr>
-						<td width="40%"><label for="password" class="leftMain"><span><?php echo '<span class="textGreyLog">' . PASSWORD . '</span>'; ?></span></label></td>
-						<td width="60%"><input type="password" name="password" id="password" class="num" value="<?php echo $this->getInfo('pass'); ?>" /></td>
-					</tr>
-	               
-					<td>
-						<input type="hidden" name="logSubmit">
-						<input type="image" class="logSubmit" src="/public/img/loginPl.png">	  
-					</td>
-				</table>
-        	</article>     	   
-        </form>	  
- 
- 		<div>
-        	<?php
-   				$ColourAlert = $this->getColourAlert();
-   				if($ColourAlert != '') {
-   				echo '<span class="ColourAlert">' . $ColourAlert . '</span>';
-				}
-			?>
-		</div>
- 
- 	</section>
+<div class="container-fluid">
+	<form action="" method="post" id="login" role="form" class="form-horizontal">		
+		<section class="row tCnt">
+			<div class="hidden-lg col-md-1 col-sm-2 col-xs-2">
+			</div>
+
+			<div class="col-lg-12 col-md-10 col-sm-8 col-xs-8">
+				<div class="emptySpaceXH"></div>
+				
+				<div class="row">
+					<div class="form-group">
+						<label for="username" class="col-lg-3 col-md-3 col-sm-3 control-label"><span class="greyLogText tL"><?php echo '<span class="textGreyLog">' . LOGIN . '</span>'; ?></span></label>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+							<input type="text"  name="username" id="username" class="form-control fieldText" placeholder="<?php echo LOG; ?>" value="<?php echo $this->getInfo('user'); ?>" />
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group">
+						<label for="password" class="col-lg-3 col-md-3 col-sm-3 control-label"><span class="greyLogText tL"><?php echo '<span class="textGreyLog">' . PASSWORD . '</span>'; ?></span></label>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+							<input type="password"  name="password" id="password" class="form-control fieldText" placeholder="<?php echo PASSWORD; ?>" value="<?php echo $this->getInfo('pass'); ?>" />
+						</div>
+					</div>
+				</div>
+
+				<div clas="row">
+					<div id="buttons" class="form-group">
+						<div class="col-lg-3 col-md-3 col-sm-3 control-label"></div>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+							<button type="submit" name="logSubmit" class="btn btn-default btn-lg btn-block" data-toggle="tooltip" data-placement="bottom" title="<?php echo CHECK_NUMBER; ?>"><?php echo '<span class="textGrey">' . LOG_IN . '</span>'; ?></button>
+						</div>
+					</div>  
+				</div>	
+
+			</div>
+
+			<div class="hidden-lg col-md-1 col-sm-2 col-xs-2">
+			</div>		
+		</section>
+	</form>
+
+	<div class="emptySpaceH">
+		<?php
+			$ColourAlert = $this->getColourAlert();
+			if($ColourAlert != '') {
+			echo '<span class="ColourAlert">' . $ColourAlert . '</span>';
+			}
+		?>
+	</div>
+	<div class="tCnt visible-xs"><span class="glyphicon glyphicon-phone"></span></div>
 </div>
-    
