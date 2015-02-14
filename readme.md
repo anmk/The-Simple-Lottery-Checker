@@ -1,11 +1,10 @@
 The Simple Lottery Checker v 1.1
 
-The application can target finding lotteries six-numbers results.
-The author tried really hard to make the application very good but he is not responsible for any errors.
+The application can target to find lotteries of six-number results.
+This website includes users authorization system. It can save the chosen numbers.
+I have built it using PHP, MySQL, HTML, CSS, JavaScript and Bootstrap.
 
-To install:
-Perform the SQL query to your MySQL database. You can run the file lottery.sql.
-You need to copy the files to your server with PHP interpreter.
+The author tried really hard to make the application very good but he is not responsible for any errors.
 
 You can see how it works:
 http://lotek.kalowski.com
