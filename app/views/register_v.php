@@ -6,51 +6,67 @@
  * @link http://lotek.kalowski.com
  */
 ?>
+	
+<div class="container-fluid">
+	<form action="" method="post" id="login" role="form" class="form-horizontal">
+		<section class="row tCnt">
+			<div class="hidden-lg col-md-1 col-sm-2 col-xs-2">
+			</div>
 
-<!DOCTYPE html>
-<title>Enter the number</title>  
-<meta charset="utf-8" />
-<link rel="stylesheet" href="/public/css/style.css" />
-    
-<div class="main">
-	<header>
-		<p class ="textBrown"><?php echo REGISTER; ?></p>
-	</header>
+			<div class="col-lg-12 col-md-10 col-sm-8 col-xs-8">
+				<div class="emptySpaceXH"></div>
+
+				<div class="row">
+					<div class="form-group">
+						<label for="username" class="col-lg-3 col-md-3 col-sm-3 control-label"><span class="greyLogText tL"><?php echo USER_NAME; ?></span></label>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+							<input type="text"  name="username" id="username" class="form-control fieldText" placeholder="<?php echo LOG; ?>" value="<?php echo $this->getInfo('user'); ?>" />
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group">
+						<label for="password" class="col-lg-3 col-md-3 col-sm-3 control-label"><span class="greyLogText tL"><?php echo PASSWORD; ?></span></label>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+							<input type="password"  name="password" id="password" class="form-control fieldText" placeholder="<?php echo PASSWORD; ?>" value="<?php echo $this->getInfo('pass'); ?>" />
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group">
+						<label for="password2" class="col-lg-3 col-md-3 col-sm-3 control-label"><span class="greyLogText tL"><?php echo CONFIRM; ?></span></label>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+							<input type="password"  name="password2" id="password2" class="form-control fieldText" placeholder="<?php echo CONFIRM_PASSWORD; ?>" value="<?php echo $this->getInfo('pass2'); ?>" />
+						</div>
+					</div>
+				</div>
+
+				<div clas="row">
+					<div id="buttons" class="form-group">
+						<div class="col-lg-3 col-md-3 col-sm-3 control-label"></div>
+						<div class="col-lg-9 col-md-9 col-sm-9">
+              				<button type="submit" name="regSubmit" class="btn btn-default btn-lg btn-block" data-toggle="tooltip" data-placement="bottom" title="<?php echo CHECK_NUMBER_REG; ?>"><?php echo '<span class="textGrey">' . CREATE_ACCOUNT . '</span>'; ?></button>
+            			</div>
+            		</div>  
+				</div>	
+
+			</div>
+				
+			<div class="hidden-lg col-md-1 col-sm-2 col-xs-2">
+			</div>
+		</section>
 	
-	<section class="main">
+	</form>
 	
-		<form action="" method="post" id="login">
-			<article>
-				<table class="inmain" border="0" width="100%" cellspacing="0" cellpadding="2">
-					<tr>
-						<td width="40%"><label for="username" class="leftMain"><?php echo '<span class="textGreyLog">' . USER_NAME . '</span>'; ?></label></td>
-						<td width="60%"><input type="text" name="username" id="username" class="num" value="<?php echo $this->getInfo('user'); ?>" /></td>
-					</tr>
-					<tr>
-						<td width="40%"><label for="password" class="leftMain"><?php echo '<span class="textGreyLog">' . PASSWORD . '</span>'; ?></label></td>
-						<td width="60%"><input type="password" name="password" id="password" class="num" value="<?php echo $this->getInfo('pass'); ?>" /></td>
-					</tr>
-					<tr>
-						<td width="40%"><label for="password2" class="leftMain"><?php echo '<span class="textGreyLog">' . CONFIRM_PASSWORD . '</span>'; ?></label></td>
-						<td width="60%"><input type="password" name="password2" id="password2" class="num" value="<?php echo $this->getInfo('pass2'); ?>" /></td>
-					</tr>
-					<td>
-						<input type="hidden" name="regSubmit">
-						<input type="image" class="regSubmit" src="/public/img/registerPl.png">	
-					</td>
-				</table>
-        	</article>
-		</form>
-		
-			<div align="center">
-            	<?php
-       				$ColourAlert = $this->getColourAlert();
-       				if($ColourAlert != '') {
-       				echo '<span class="ColourAlert">' . $ColourAlert . '</span>';
-					}
-  				?>
-    		</div>
-            	
-	</section>
-            
+	<div class="emptySpaceH">
+    	<?php
+			$ColourAlert = $this->getColourAlert();
+			if($ColourAlert != '') {
+			echo '<span class="ColourAlert">' . $ColourAlert . '</span>';
+			}
+		?>
+	</div>
+	<div class="tCnt visible-xs"><span class="glyphicon glyphicon-phone"></span></div>
 </div>
