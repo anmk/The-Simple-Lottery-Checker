@@ -1,5 +1,5 @@
 /*
- * $Id: style.css, v 1.1
+ * $Id: style.css, v 1.2
  * The Simple Lottery Checker
  * @author Andrzej Kałowski
  * @link http://lotek.kalowski.com
@@ -69,6 +69,15 @@ body {
 		}
 .breadcrumb > .active {
 		border: 0.5rem solid transparent;
+		}
+
+/* Lang Control ############################ */
+.lang-control {
+		color: #748061;
+		}
+.lang-control > a:hover {
+		color: #7e6c06;
+		text-decoration: none;
 		}
 
 /* Form Control ############################ */
@@ -154,7 +163,7 @@ font-family: 'Andika', sans-serif;
 		color: #808080;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 80%;
+		font-size: 70%;
 		}
 .numberSaveText {
 		color: #808080;
