@@ -1,7 +1,7 @@
 <?php
 
 /*
- * $Id: number.php, v 1.1
+ * $Id: number.php, v 1.2
  * The Simple Lottery Checker
  * @author Andrzej Kałowski
  * @link http://lotek.kalowski.com
@@ -56,64 +56,64 @@ if (!isset($numberId)) $numberId = '';
 if (!isset($devices)) $devices = '';
 
 if($_POST['chosenNumber1'] == '' || $_POST['chosenNumber2'] == '' || $_POST['chosenNumber3'] == '' || $_POST['chosenNumber4'] == '' || $_POST['chosenNumber5'] == '' || $_POST['chosenNumber6'] == ''){
-	$Transfer->setColourAlert(ENTER_ALL_NUMBER,'redColour');
+	$Transfer->setColourAlert($Languages->translator('ENTER_ALL_NUMBER'),'redColour');
 	$Transfer->loadLink("views/number_v.php");
 	 
 }else if($_POST['drawnNumber1'] == '' || $_POST['drawnNumber2'] == '' || $_POST['drawnNumber3'] == '' || $_POST['drawnNumber4'] == '' || $_POST['drawnNumber5'] == '' || $_POST['drawnNumber6'] == ''){
-	$Transfer->setColourAlert(ENTER_ALL_NUMBER,'redColour');
+	$Transfer->setColourAlert($Languages->translator('ENTER_ALL_NUMBER'),'redColour');
 	$Transfer->loadLink("views/number_v.php");
 
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber1'))){
-	$Transfer->setColourAlert(CORRECT_FIRST_CHOSEN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_FIRST_CHOSEN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber2'))){
-	$Transfer->setColourAlert(CORRECT_SECOND_CHOSEN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_SECOND_CHOSEN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber3'))){
-	$Transfer->setColourAlert(CORRECT_THIRD_CHOSEN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_THIRD_CHOSEN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber4'))){
-	$Transfer->setColourAlert(CORRECT_FOURTH_CHOSEN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_FOURTH_CHOSEN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber5'))){
-	$Transfer->setColourAlert(CORRECT_FIFTH_CHOSEN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_FIFTH_CHOSEN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('cNumber6'))){
-	$Transfer->setColourAlert(CORRECT_SIXTH_CHOSEN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_SIXTH_CHOSEN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber1'))){
-	$Transfer->setColourAlert(CORRECT_FIRST_DRAWN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_FIRST_DRAWN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
  
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber2'))){
-	$Transfer->setColourAlert(CORRECT_SECOND_DRAWN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_SECOND_DRAWN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber3'))){
-	$Transfer->setColourAlert(CORRECT_THIRD_DRAWN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_THIRD_DRAWN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber4'))){
-	$Transfer->setColourAlert(CORRECT_FOURTH_DRAWN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_FOURTH_DRAWN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber5'))){
-	$Transfer->setColourAlert(CORRECT_FIFTH_DRAWN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_FIFTH_DRAWN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 	
 } else if (!preg_match('^[0-9]{1,}$^', $Transfer->getInfo('dNumber6'))){
-	$Transfer->setColourAlert(CORRECT_SIXTH_DRAWN_NUMBER,'redColour');        
+	$Transfer->setColourAlert($Languages->translator('CORRECT_SIXTH_DRAWN_NUMBER'),'redColour');        
 	$Transfer->loadLink("views/number_v.php");
 
 } else if (($Authorization->logStatus() == TRUE) && ($_POST['chosenNumberName'] != '')) {
 	$AccountSpace->remember($Transfer->getInfo('numberId'), $Transfer->getInfo('chNumberName'), $Transfer->getInfo('cNumber1'), $Transfer->getInfo('cNumber2'), $Transfer->getInfo('cNumber3'), $Transfer->getInfo('cNumber4'), $Transfer->getInfo('cNumber5'), $Transfer->getInfo('cNumber6'));
-	$Transfer->setColourAlert(NAME_SAVED,'greenColour');
+	$Transfer->setColourAlert($Languages->translator('NAME_SAVED'),'greenColour');
 	$Transfer->setInfo('chNumberName', '');
 	$AccountSpace->numbersToUsers($AccountSpace->numberId, $AccountSpace->usersId($userId));
 	$Transfer->loadLink("views/number_v.php");	
@@ -130,7 +130,7 @@ echo '<div class="row">';
 	echo '<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 tL">';	
 		echo '<table><td class="numberGreyText tL">';
 			foreach ($cNumbers as $cNumber => $cValue) {
-				echo $cNumber+1 . CHOSEN_NUMBER . '&nbsp' . '<span class="numberBrownText">' . $cValue . '</span>' . '<br>';	
+				echo $cNumber+1 . $Languages->translator('CHOSEN_NUMBER') . '&nbsp' . '<span class="numberBrownText">' . $cValue . '</span>' . '<br>';	
 			}
 		echo '</td></table>';		
 	echo '</div>';
@@ -138,7 +138,7 @@ echo '<div class="row">';
 	echo '<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 tR">';
 		echo '<table><td class="numberGreyText tL">';
 			foreach ($dNumbers as $dNumber => $dValue) {
-				echo $dNumber+1 . DRAWN_NUMBER . '&nbsp' . '<span class="numberGreenText">' . $dValue . '</span>' . '<br/>';	
+				echo $dNumber+1 . $Languages->translator('DRAWN_NUMBER') . '&nbsp' . '<span class="numberGreenText">' . $dValue . '</span>' . '<br/>';	
 			}
 		echo '</td></table>';	
 	echo '</div>';
@@ -162,7 +162,7 @@ echo '<div class="row">';
 				}
 			}
 		}
-		echo '<div class="emptySpaceXH"></div><span class="numberGreyText tCnt emptySpaceH">' . SORT_LUCKY_NUMBERS . '</span><div class="emptySpaceH"></div>';
+		echo '<div class="emptySpaceXH"></div><span class="numberGreyText tCnt emptySpaceH">' . $Languages->translator('SORT_LUCKY_NUMBERS') . '</span><div class="emptySpaceH"></div>';
 			$sortOutcome = array();
 			$sortOutcome = $outcome;
 			sort($sortOutcome);
@@ -170,7 +170,7 @@ echo '<div class="row">';
 			echo '&nbsp' . '<span class="numberRedText tCnt">' . $sortcValue . '</span>' . '&nbsp'; //sorted outcome
 		}	
 		echo '<div class="emptySpaceH"></div>';
-		echo '<p class="numberGreyText tCnt">' . YOU_HAVE . '<span class="numberOrangeText">' . $guessFactor . '</span>' . GUESS . '</p>';
+		echo '<p class="numberGreyText tCnt">' . $Languages->translator('YOU_HAVE') . '<span class="numberOrangeText">' . $guessFactor . '</span>' . $Languages->translator('GUESS') . '</p>';
 	echo '</div>';
 
 	echo '<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">';
