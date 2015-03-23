@@ -1,13 +1,15 @@
 <?php
 /*
- * $Id: login_i.php, v 1.1
+ * $Id: login_i.php, v 1.2
  * The Simple Lottery Checker
  * @author Andrzej Kałowski
  * @link http://lotek.kalowski.com
  */
- ?>
 
-<?php include_once("app/init.php"); ?>
+include_once("app/init.php");
+if (!isset($_SESSION['lng'])) $_SESSION['lng'] = 'Pl';
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
@@ -27,10 +29,14 @@
 	</head>
 
 	<body id="login_i">
-		<div class="container-fluid">	
+		<div id ="ln">
+			<span class="emptySpaceW"></span><span class=lang-control><?php $Languages->selectLanguage(); ?></span><span class="emptySpaceW"></span>
+			<span class="glyphicon glyphicon-flag lang-control"></span><span class="lang-control"><?php echo '&nbsp' . $_SESSION['lng']; ?></span>
+		</div>
+		<h4 class="textGreen animated fadeInDown"><?php $Languages = new Languages_m($_SESSION['lng']); echo $Languages->translator('CHECK_OUTCOME'); ?></h4>
 
+		<div class="container-fluid">
 			<header id="hdr">
-				<h4 class="textGreen animated fadeInDown"><?php echo CHECK_OUTCOME; ?></h4>
 				<div id="menu" class="navbar-fixed-top container-fluid">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<nav class="navbar navbar-default" role="navigation">
@@ -45,14 +51,14 @@
 								</div>
 								<div class="collapse navbar-collapse" id="imp">
 									<ul class="nav navbar-nav">
-										<li id="number-i"><a href="number_i.php"><?php echo CHECK_M; ?></a></li>
+										<li id="number-i"><a href="number_i.php"><?php echo $Languages->translator('CHECK_M'); ?></a></li>
 										<?php if($Authorization->logStatus() == TRUE)
 										{ ?>
-										<li id="privacy-i"><a href="privacy_i.php"><?php echo MY_ACCOUNT_M; ?></a></li>	
-										<li id="logout-i"><a href="logout_i.php"><?php echo LOGOUT_M; ?></a></li>
+										<li id="privacy-i"><a href="privacy_i.php"><?php echo $Languages->translator('MY_ACCOUNT_M'); ?></a></li>	
+										<li id="logout-i"><a href="logout_i.php"><?php echo $Languages->translator('LOGOUT_M'); ?></a></li>
 										<?php } else { ?>
-										<li class="active" id="login-i"><a href="login_i.php"><?php echo LOGIN_M; ?></a></li>
-										<li id="register-i"><a href="register_i.php"><?php echo REGISTER_M; ?></a></li>
+										<li class="active" id="login-i"><a href="login_i.php"><?php echo $Languages->translator('LOGIN_M'); ?></a></li>
+										<li id="register-i"><a href="register_i.php"><?php echo $Languages->translator('REGISTER_M'); ?></a></li>
 										<?php } ?>
 									</ul>
 								</div>
@@ -61,7 +67,9 @@
 					</div>
 				</div>
 				<ol class="breadcrumb">
-					<li class="active"><a href="login_i.php" class="breadcrumb"><span class="glyphicon glyphicon-log-in"></span><?php echo '&nbsp' . LOGIN; ?></a></li>
+					<li class="active">
+						<a href="login_i.php" class="breadcrumb"><span class="glyphicon glyphicon-log-in"></span><?php echo '&nbsp' . $Languages->translator('LOGIN_M'); ?></a>
+					</li>
 				</ol>
 			</header>
 
@@ -80,8 +88,8 @@
 			</section>
 
 			<footer id="footer">	
-				<p class="footerLightGreyText"><?php echo INFO;?></p>
-				<p class="footerLightGreyText"><?php echo ERRORS;?></p>
+				<p class="footerLightGreyText"><?php echo $Languages->translator('INFO');?></p>
+				<p class="footerLightGreyText"><?php echo $Languages->translator('ERRORS');?></p>
 			</footer>
 		</div>
 
