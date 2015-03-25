@@ -1,6 +1,6 @@
 <?php
 /*
- * $Id: filenames.php, v 1.1
+ * $Id: filenames.php, v 1.2
  * The Simple Lottery Checker
  * @author Andrzej Kałowski
  * @link http://lotek.kalowski.com
@@ -21,5 +21,3 @@ define('FILE_REGISTER_INIT', 'register_i.php');
 define('FILE_PRIVACY', 'privacy.php');
 define('FILE_PRIVACY_VIEW', 'privacy_v.php');
 define('FILE_PRIVACY_INIT', 'privacy_i.php');
-define('FILE_POLISH', 'polish.php');
-define('FILE_ENGLISH', 'english.php');
