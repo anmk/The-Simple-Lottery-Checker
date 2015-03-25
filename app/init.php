@@ -1,6 +1,6 @@
 <?php 
 /*
- * $Id: init.php, v 1.1
+ * $Id: init.php, v 1.2
  * The Simple Lottery Checker
  * @author Andrzej Kałowski
  * @link http://lotek.kalowski.com
@@ -24,8 +24,3 @@ include(DIR_MOD.'main.php');
 
 $Transfer->setColourAlertTypes(array('greenColour', 'redColour', 'blueColour', 'orangeColour'));
 session_start();
-
-//languages
-include(DIR_LANGUAGES.FILE_POLISH);
-//include(DIR_LANGUAGES.FILE_ENGLISH);
-
