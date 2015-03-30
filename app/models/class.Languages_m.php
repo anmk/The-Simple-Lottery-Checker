@@ -8,13 +8,13 @@
 
 class Languages_m {
 
-    private $lang = null;
+	private $lang = null;
 
-    function __construct($lang) {
+	function __construct($lang) {
 		$this->lang = parse_ini_file("app/languages/"."{$lang}.ini");
-    }
+	}
 
-    function translator($str){
+	function translator($str){
 		try {
 			if(!isset($this->lang[$str]))
 			throw new Exception("Expected string not found: $str");
@@ -27,10 +27,10 @@ class Languages_m {
 	function selectLanguage() {
 		$allLanguages = array('Pl', 'En');
 		if (in_array($_GET['lng'], $allLanguages)) {
-		    $_SESSION['lng'] = $_GET['lng'];
+			$_SESSION['lng'] = $_GET['lng'];
 		}
 		foreach($allLanguages as $oneLanguage) {
-		    echo '&nbsp<a class="lang-control" href="?lng='.$oneLanguage.'">'.$oneLanguage.'</a>&nbsp';
+			echo '&nbsp<a class="lang-control" href="?lng='.$oneLanguage.'">'.$oneLanguage.'</a>&nbsp';
 		}
 	}
 
