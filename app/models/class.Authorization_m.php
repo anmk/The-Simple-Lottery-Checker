@@ -1,34 +1,35 @@
 <?php
 /*
- * $Id: class.Authorization_m.php, v 1.1
+ * $Id: class.Authorization_m.php, v 1.2
  * The Simple Lottery Checker
  * @author Andrzej Kałowski
- * @link http://lotek.kalowski.com
+ * @link http://projects.kalowski.com/lotterychecker/
  */
 
 class Authorization_m {
 	
-	private $key = 'qAe12tYi&#';
+	private $key = '';
 
 	function __construct(){
     }
 	
 	function logGuard($user, $pass){
-        global $database;
-        if($stmt = $database->prepare("SELECT username, password FROM users WHERE username = ? AND password = ?")){
-			$stmt->bind_param("ss", $user, $this->encrypt($pass));
-            $stmt->execute();
-            $stmt->store_result(); 
-            if($stmt->num_rows > 0){
-                $stmt->close();
-                return TRUE;
-            } else {
-                $stmt->close();
-                return FALSE;
-            }
-        } else {
+		global $database;
+		$encryptPass = $this->encrypt($pass);
+			if($stmt = $database->prepare("SELECT username, password FROM users WHERE username = ? AND password = ?")){
+				$stmt->bind_param("ss", $user, $encryptPass);
+            	$stmt->execute();
+            	$stmt->store_result(); 
+            	if($stmt->num_rows > 0){
+                	$stmt->close();
+                	return TRUE;
+            	} else {
+                	$stmt->close();
+                	return FALSE;
+            	}
+        	} else {
             die();
-        }
+        	}
     }
 	 
 	function filter($user){
